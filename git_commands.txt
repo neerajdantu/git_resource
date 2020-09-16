@@ -79,8 +79,15 @@ git rm filename (Already tracked in Git)
 git commit -m "message of removal"
 
 git rm -f filename (for removing files that are staged but not tracked)
-git rm --chached filename
+git rm --cached filename
 
+
+#REMOVE MULTIPLE FILES
+git rm \*.log  (\ needed because git does own expansion after shell. We need to avoid it?)
+
+
+#MOVE FILE
+git mv file_from file_to   (equivalent to mv file_from file_to;git rm file_from;git add file_to)
 
 ###########################################################################
 ####################Git from remote########################################
