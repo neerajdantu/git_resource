@@ -50,7 +50,7 @@ git add :/
 https://github.com/github/gitignore
 
 #GIT COMMIT EVERYTHING THAT WAS ADDED
-git commit -a
+git commit -a -m "commit message"
 
 
 #STATUS - WHAT ARE MODIFIED AND ADDED FILE STATUS
@@ -59,6 +59,10 @@ git status
 
 #DIFFERENCE IN WHAT HAS NOT BEEN STAGED YET
 git diff
+
+
+#DIFFERENCE IN WHAT HAS BEEN STAGED BUT NOT COMMITTED
+git diff --staged
 
 
 #LOG OF ALL COMMITS AND BRANCHES
