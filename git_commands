@@ -53,9 +53,15 @@ https://github.com/github/gitignore
 git commit -a
 
 
-
-#STATUS AND LOG
+#STATUS - WHAT ARE MODIFIED AND ADDED FILE STATUS
 git status
+
+
+#DIFFERENCE IN WHAT HAS NOT BEEN STGED YET
+git diff
+
+
+#LOG OF ALL COMMITS AND BRANCHES
 git log --all --graph --decorate
 
 
