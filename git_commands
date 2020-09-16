@@ -57,7 +57,7 @@ git commit -a
 git status
 
 
-#DIFFERENCE IN WHAT HAS NOT BEEN STGED YET
+#DIFFERENCE IN WHAT HAS NOT BEEN STAGED YET
 git diff
 
 
