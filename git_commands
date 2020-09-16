@@ -1,0 +1,77 @@
+############################################################################
+###################Git Configuration########################################
+############################################################################
+
+#SYSTEM LEVEL
+/etc/gitconfig
+
+git  config --system
+
+#USER LEVEL
+~/.gitconfig or ~/.config/git/config
+
+git config --global
+
+#IN PARTICULAR GIT
+.git/config
+
+git config --local
+
+#LOCAL OVERRIDES GLOBAL OVERRIDES SYSTEM
+
+#SHOW ALL GIT CONFIG
+git config --list --show-origin
+
+#CONFIG IDENTITY
+git config --global user.name "neeraj dantu"
+git config --gloabl user.email dantuguf14105@gmail.com
+
+#CHECK CONFIG
+git config user.name
+
+#CONFIG EDITOR
+git config --global core.editor emacs/vim/C:/..
+
+
+############################################################################
+###################Initalize Git in a directory#############################
+############################################################################
+
+mkdir git_dir
+git init
+.
+.
+.
+
+#GIT ADD ALL FILES CREATED
+git add :/
+
+#CREATE GITIGNORE
+https://github.com/github/gitignore
+
+#GIT COMMIT EVERYTHING THAT WAS ADDED
+git commit -a
+
+
+
+#STATUS AND LOG
+git status
+git log --all --graph --decorate
+
+
+#CHECKOUT A BRANCH
+git checkout branch-name
+git checkout part_of_SHA1
+
+
+
+###########################################################################
+####################Git from remote########################################
+###########################################################################
+
+#CLONING FROM REMOTE
+git clone https://github.com/gitreponame
+
+
+
+
