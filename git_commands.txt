@@ -73,6 +73,12 @@ git diff --staged
 #LOG OF ALL COMMITS AND BRANCHES
 git log --all --graph --decorate
 
+#LOG OF DIFFS FOR EACH COMMIT
+git log --patch -2    (or git log -p -2)
+
+#LOG OF FILE CHANGES
+git log --stat
+
 
 #REMOVE FILE FROM GIT
 git rm filename (Already tracked in Git)
@@ -97,8 +103,9 @@ git mv file_from file_to   (equivalent to mv file_from file_to;git rm file_from;
 git clone https://github.com/gitreponame
 
 #CHECKOUT A BRANCH
-git checkout branch-name
+git checkout branch_name
 git checkout part_of_SHA1
+
 
 
 
