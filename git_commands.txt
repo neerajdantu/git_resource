@@ -111,6 +111,9 @@ git mv file_from file_to   (equivalent to mv file_from file_to;git rm file_from;
 #UNSTAGE FILE
 git reset HEAD filename
 
+#DISCARD CHANGES TO A FILE
+git checkout -- filename
+
 ###########################################################################
 ####################Git from remote########################################
 ###########################################################################
