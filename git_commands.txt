@@ -57,6 +57,11 @@ git checkout part_of_SHA1
 #GIT COMMIT EVERYTHING THAT WAS ADDED
 git commit -a -m "commit message"
 
+#CHNAGE GIT COMMIT MESSAGE OR CHANGE COMMIT ITSELF
+git commit -m "Iniital commit"
+git add filename
+git commit --amend -m "Good updated commit"
+
 
 #STATUS - WHAT ARE MODIFIED AND ADDED FILE STATUS
 git status
@@ -78,6 +83,13 @@ git log --patch -2    (or git log -p -2)
 
 #LOG OF FILE CHANGES
 git log --stat
+
+#LOG IN PRETTY
+git log --pretty=format:"%h %s" --graph
+
+
+#LOG OF COMMITS WITH CHANGE IN NUMBER OF USES OF FUNCTION NAME
+git log -S function_name
 
 
 #REMOVE FILE FROM GIT
