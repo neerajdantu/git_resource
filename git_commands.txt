@@ -107,6 +107,10 @@ git rm \*.log  (\ needed because git does own expansion after shell. We need to 
 #MOVE FILE
 git mv file_from file_to   (equivalent to mv file_from file_to;git rm file_from;git add file_to)
 
+
+#UNSTAGE FILE
+git reset HEAD filename
+
 ###########################################################################
 ####################Git from remote########################################
 ###########################################################################
