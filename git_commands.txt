@@ -205,6 +205,28 @@ git show tag_version
 #TAG A PRTICUAL COMMIT
 git tag -a tag_version commit_SHA1
 
+#PUSH TAGS TO REMOTE
+git push remote_name tag_name
+
+#PUSH ALL TAGS TO REMOTE
+git push remote_name --tags
+
+
+#DELETE TAGS
+git tag -d tag_name
+
+#DELETE TAGS FROM REMOTE
+git push remote_name --delete tag_name
+
+
+#CHECKOUT FROM TAG
+git checkout -b new_branch_name tag_name
+
+
+
+
+
+
 
 
 
