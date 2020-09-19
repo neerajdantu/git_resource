@@ -161,12 +161,13 @@ git pull
 git push <remote> <branch>
 
 
-
 ########################################################################
 ############CONNECT YOU LOCAL GIT TO REMOTE REPO########################
 ########################################################################
 
 git remote add local_name URL
+
+git fetch local_name
 
 git pull local_name master --allow-unrelated-histories
 
@@ -177,7 +178,28 @@ git push
 
 
 
+#######################################################################
+################TAGGING IN GIT#########################################
+#######################################################################
 
+
+#LIST TAGS
+git tag
+
+#LIST TAGS WITH PARTICULAR PATTERN
+git tag -l "pattern"
+
+
+#CREATING A NORMAL TAG
+git tag tagging_version
+
+
+#CREATING AN ANNOTATED TAG
+git tag -a tag_version -m "Tag message"
+
+
+#SHOW INFO ON A TAG
+git show tag_version
 
 
 
