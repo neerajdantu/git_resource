@@ -112,7 +112,7 @@ git mv file_from file_to   (equivalent to mv file_from file_to;git rm file_from;
 git reset HEAD filename
 
 #DISCARD CHANGES TO A FILE
-git checkout -- filename
+git checkout -- filename1 filename2
 
 ###########################################################################
 ####################Git from remote########################################
@@ -121,9 +121,44 @@ git checkout -- filename
 #CLONING FROM REMOTE
 git clone https://github.com/gitreponame
 
+#WHAT ARE REMOTES ASSOCIATED WITH CURRENT GIT DIRECTORY
+git remote
+
+git remote -v
+
+
+#MORE INFO ON A PARTICULAR REMOTE
+git remote show <remote>
+
 #CHECKOUT A BRANCH
 git checkout branch_name
 git checkout part_of_SHA1
+
+
+# ADD REMOTE REPO TO CURRENT GIT
+git add remote short_name URL
+
+#DELETE REMOTE REPO TO CURRENT GIT
+git remote remove short_name
+
+#REANME REMOTE REPO THAT WAS ADDED
+git remote rename short_name_old short_name_new
+
+
+#GET DATA FROM REMOTE
+git fetch short_name
+
+
+#GET AND UPDATE DATA FROM SOURCE GIT THAT THE LOCAL REPO TRACKS
+git pull
+
+
+#PUSH CHANGES YOU MADE TO REMOTE (EXAMPLE: GIT PUSH ORIGIN MASTER)
+git push <remote> <branch>
+
+
+
+
 
 
 
