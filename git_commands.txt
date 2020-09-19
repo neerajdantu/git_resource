@@ -202,6 +202,12 @@ git tag -a tag_version -m "Tag message"
 git show tag_version
 
 
+#TAG A PRTICUAL COMMIT
+git tag -a tag_version commit_SHA1
+
+
+
+
 
 
 
