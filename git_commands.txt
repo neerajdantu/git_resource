@@ -240,6 +240,22 @@ git config --global alias.short_name command_to_replace
 ###################### BRANCHING IN DETAIL ###########################
 ######################################################################
 
+
+#LIST ALL BRANCHES
+git branch
+
+
+#LIST ALL BRANCHES WITH VERBOSE
+gti branch -v
+
+
+#LIST ONLY MERGED BRANCHES
+git branch --merged
+
+
+#LIST NON MERGED BRANCHES ONLY
+git branch --no-merged
+
 #CREATE A NEW BRANCH
 git brach new_branch_name
 
@@ -252,6 +268,9 @@ git checkout new_branch_name
 git checkout -b new_branch_name
 
 
+#DELETE BRANCH PROBABLY AFTER MERGING
+git branch -d branch_name
+
 ######################################################################
 ####################### MERGING ######################################
 ######################################################################
@@ -263,9 +282,11 @@ git checkout master
 git merge branch_name_to_merge
 
 
+#USE GUI TOOL when there is conflict
+git mergetool
 
 
-
-
+#DELETE BRACH AFTER MERGING
+git branch -d branch_name
 
 
