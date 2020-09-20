@@ -135,7 +135,7 @@ git remote show <remote>
 git remote add local_name URL
 
 #CHECKOUT A BRANCH
-git checkout branch_name
+git checkout -b remote_name/branch_name
 git checkout part_of_SHA1
 
 
