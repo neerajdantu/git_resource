@@ -262,7 +262,7 @@ git checkout master
 
 git merge branch_name_to_merge
 
-===Doing this so we can create a merge conflcit
+
 
 
 
