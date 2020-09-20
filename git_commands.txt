@@ -262,6 +262,8 @@ git checkout master
 
 git merge branch_name_to_merge
 
+__This is a new line just to create a conflict
+
 
 
 
