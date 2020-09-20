@@ -224,8 +224,43 @@ git checkout -b new_branch_name tag_name
 
 
 
+######################################################################
+######################### GIT ALIASES ################################
+######################################################################
+
+#CREATE ALIAS FOR A GIT COMMAND
+git config --global alias.co checkout
+git config --global alias.unstage 'reset HEAD --'
+git config --global alias.last 'log -1 HEAD'
+
+git config --global alias.short_name command_to_replace
 
 
+######################################################################
+###################### BRANCHING IN DETAIL ###########################
+######################################################################
+
+#CREATE A NEW BRANCH
+git brach new_branch_name
+
+
+#CHECKOUT THE BRANCH
+git checkout new_branch_name
+
+
+#CREATE AND CHECKOUT NEW BRANCH
+git checkout -b new_branch_name
+
+
+######################################################################
+####################### MERGING ######################################
+######################################################################
+
+
+#MERGE A BRANCH INTO MASTER
+git checkout master
+
+git merge branch_name_to_merge
 
 
 
