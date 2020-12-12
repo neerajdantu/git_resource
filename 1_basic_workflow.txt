@@ -29,12 +29,12 @@ git commit -m "First commit message"
 STEP 5:: Discard changes made
 _____________________________
 
-
+===TO unstage but keep changes
 git reset HEAD filename
 
 
 OR
 
-
+===To discard all changes
 git checkout -- filename1 filename2
 
