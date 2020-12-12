@@ -1,0 +1,27 @@
+########################BASIC WORKFLOW FOR GIT##############################
+
+
+STEP 1:: Initialize a git repo in a folder
+_________________________________________
+
+git init
+
+
+STEP 2:: Check status 
+____________________
+
+git status
+
+
+STEP 3:: Add all files to git control
+_____________________________________
+
+git add .
+
+
+STEP 4:: Commit
+_______________
+
+git commit -m "First commit message"
+
+

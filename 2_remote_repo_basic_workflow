@@ -1,0 +1,46 @@
+########################REMOTE REPO BASIC WORKFLOW###############################
+
+
+STEP 1:: Clone repo to local machine
+____________________________________
+
+git clone https://github.com/user/repo
+
+
+
+STEP 2:: Check Status
+_____________________
+
+git status
+
+
+STEP 3:: modify files
+_____________________
+
+
+
+STEP 4:: Commit changes to local repo
+_____________________________________
+
+
+git commit -m "commit message"
+
+
+STEP 5:: Check remote for updates and get latest
+_________________________________________________
+
+
+git pull origin master
+
+
+ORIGIN = Remote name in local repo
+
+MASTER = Branch on remote to pull from 
+
+
+
+STEP 6:: Push changes to remote
+_______________________________
+
+
+git push origin master
