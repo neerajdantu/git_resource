@@ -33,9 +33,9 @@ _____________________________
 git reset HEAD filename
 
 
-OR
+AND
 
-===To discard all changes
+===To discard unstaged changes
 git checkout -- filename1 filename2
 
 
