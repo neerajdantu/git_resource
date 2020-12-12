@@ -26,7 +26,20 @@ _____________________________________
 git commit -m "commit message"
 
 
-STEP 5:: Check remote for updates and get latest
+STEP 5:: Discard changes made
+_____________________________
+
+
+git reset HEAD filename
+
+
+OR
+
+
+git checkout -- filename1 filename2
+
+
+STEP 6:: Check remote for updates and get latest
 _________________________________________________
 
 
@@ -39,7 +52,7 @@ MASTER = Branch on remote to pull from
 
 
 
-STEP 6:: Push changes to remote
+STEP 7:: Push changes to remote
 _______________________________
 
 

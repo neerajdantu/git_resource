@@ -25,3 +25,16 @@ _______________
 git commit -m "First commit message"
 
 
+
+STEP 5:: Discard changes made
+_____________________________
+
+
+git reset HEAD filename
+
+
+OR
+
+
+git checkout -- filename1 filename2
+
