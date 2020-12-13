@@ -1,0 +1,34 @@
+######################################################################################
+############################### DIFFING IN DETAIL ####################################
+######################################################################################
+
+
+********WILL ONLY WORK WHEN FILE IS ALREADY BEING TRACKED*****************************
+
+WORKING DIRECTORY
+|							|
+|							|
+|							|
+|   git diff						|
+|   git difftool	#LEFT=STAGING RIGHT=WORKING	|
+|							|	
+|							|    git diff HEAD
+STAGING AREA						|    git difftool HEAD	#LEFT=HEAD RIGHT=WORKING
+|							|
+|							|
+|							|
+|   git diff --staged HEAD				|
+|   git difftool --staged HEAD	#LEFT=HEAD RIGHT=STAGING|
+|							|
+|							|
+|							|
+LOCAL REPO
+|
+|
+|
+|
+|
+|
+|
+|
+REMOTE REPO
