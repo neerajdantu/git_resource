@@ -33,6 +33,46 @@ git config user.name
 git config --global core.editor emacs/vim/C:/..
 
 
+#CONFIG DIFF TOOL
+git config --global diff.tool meld
+git config --global difftool.prompt false
+
+#IF NECESSARY FOR PATH
+git config --global difftool.meld.path "PATH TO MELD APPLICATION"
+
+#CONFIG MERGE TOOL
+git config --gloabl merge.tool meld
+git config --gloabl mergetool.promtp false
+
+#IF NECESSARY FOR PATH
+git config --global mergetool.meld.path "PATHG TO MELD APPLICATION"
+
+
+###ADDITION CONFIG FILE SETTINGS###
+# Add the following to your .gitconfig file.
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+
+
+# Add the following to your .gitconfig file.
+[merge]
+    tool = meld
+[mergetool "meld"]
+    # Choose one of these 2 lines (not both!) explained below.
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+    cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+
+
+
+***********FOR MORE INFO******************
+https://stackoverflow.com/questions/34119866/setting-up-and-using-meld-as-your-git-difftool-and-mergetool
+
+
+
 ############################################################################
 ###################Initalize Git in a directory#############################
 ############################################################################
